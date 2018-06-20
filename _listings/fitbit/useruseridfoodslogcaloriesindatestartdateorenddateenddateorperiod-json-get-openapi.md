@@ -1,10 +1,13 @@
 ---
 swagger: "2.0"
 x-collection-name: Fitbit
-x-complete: 1
+x-complete: 0
 info:
-  title: Fitbit
-  description: bring-fitbit-health-data-into-your-apps-including-user-activities-sleep-heart-glucose-and-blood-pressure-information-
+  title: Fitbit Get User User Foods Log Caloriesin Date Start Date Or End Date End
+    Date Or Period .json
+  description: Get time series in the specified range for a given resource in the
+    format requested using units in the unit system which corresponds to the Accept-Language
+    header provided.
   version: 1.0.0
 host: api.fitbit.com
 basePath: /1
@@ -244,54 +247,17 @@ paths:
       - Date
       - Start-date-or-end-date
       - End-date-or-period.json
-  /user/-/foods/log/{food-log-id}.json:
-    delete:
-      summary: Delete User Foods Log Food Log .json
-      description: Delete the user's food log entry with the given id.
-      operationId: deleteUserFoodsLogFoodLog.json
-      x-api-path-slug: userfoodslogfoodlogid-json-delete
-      responses:
-        200:
-          description: OK
-      tags:
-      - User
-      - '-'
-      - Foods
-      - Log
-      - Food-log-id.json
-  /user/-/foods/log.json:
-    post:
-      summary: Post User Foods Log.json
-      description: Create log entry for a food. You need to select one of the unit
-        ids to create a food log entry. It is possible to fetch unit ids allowed for
-        specific food via previous calls to endpoints that retrieve food lists of
-        the user. Each unit id maps to a unit in the list returned via the Get Food
-        Units API call.
-      operationId: postUserFoodsLog.json
-      x-api-path-slug: userfoodslog-json-post
-      responses:
-        200:
-          description: OK
-      tags:
-      - User
-      - '-'
-      - Foods
-      - Log.json
-  /user/{user-id}/foods/log/date/{date}.json:
-    get:
-      summary: Get User User Foods Log Date Date .json
-      description: Get a summary and list of a user's food log entries for a given
-        day in the format requested.
-      operationId: getUserUserFoodsLogDateDate.json
-      x-api-path-slug: useruseridfoodslogdatedate-json-get
-      responses:
-        200:
-          description: OK
-      tags:
-      - User
-      - User-id
-      - Foods
-      - Log
-      - Date
-      - Date.json
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
 ---
