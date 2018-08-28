@@ -1,0 +1,33 @@
+{
+	"name": "Streadata.io API Gallery - Foods",
+	"description": "This is a repository of foods APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/foods.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-27",
+	"url": "http://foods.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "Fitbit",
+			"x-api-slug": "fitbit",
+			"description": "Find your fit with Fitbits family of fitness products that help you stay motivated and improve your health by tracking your activity, exercise, food, weight and sleep.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/200-fitbit.jpg",
+			"humanURL": "http://fitbit.com",
+			"baseURL": "https://api.fitbit.com//1",
+			"tags": "Foods",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/foods/master/_listings/fitbit/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Foods",
+	"include": [
+		{
+			"name": "Fitbit",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/foods/master/_listings/fitbit/apis.yaml"
+		}
+	]
+}

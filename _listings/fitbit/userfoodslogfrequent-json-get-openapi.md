@@ -77,19 +77,6 @@ paths:
       - Foods
       - Log
       - Goal.json
-  /foods.json:
-    post:
-      summary: Post Foods.json
-      description: Create new private food for a user and get a response in a format
-        requested. Created private food could be found in results of Search Foods
-        call.
-      operationId: postFoods.json
-      x-api-path-slug: foods-json-post
-      responses:
-        200:
-          description: OK
-      tags:
-      - Foods.json
   /user/-/foods/log/water/{water-log-id}.json:
     delete:
       summary: Delete User Foods Log Water Water Log .json
